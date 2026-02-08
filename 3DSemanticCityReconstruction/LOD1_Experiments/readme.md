@@ -1,15 +1,14 @@
 # Point Cloud Experiments
 
 ## LoD1Mesh-MLS.ipynb
----
 MLS Experiments : Initial experiments for Cuboid mesh reconstruction (PCA Based), LOD1.2 Basic Experiments
+---
 
 ## Mesh Normal Alignment for Better Shading
----
 ReworkMesh.ipynb --> Realigns normals, for better shading
+---
 
 ## ALS LiDAR Point Cloud Experiments : LoD1Mesh-ALS.ipynb
----
 
 The focus is on robust pose estimation, ground aware alignment, and footprint orientation without relying on machine learning techniques.
 
@@ -34,8 +33,6 @@ A simple yet robust cuboid reconstruction method that:
 
 This approach works well for clean, rectangular structures but can struggle when roof geometry dominates orientation.
 
----
-
 #### 2. Rasterized Minimum Rectangle Cuboid
 
 Improves footprint orientation by:
@@ -46,8 +43,6 @@ Improves footprint orientation by:
 - aligning the cuboid to the rectangle orientation
 
 Fallback mechanisms ensure stability when contour extraction fails.
-
----
 
 #### 3. Directional Consensus Cuboid (Edge + RANSAC Voting)
 
@@ -61,8 +56,6 @@ A more advanced orientation estimator that:
 
 This method is designed to preserve façade alignment and handle complex footprints.
 
----
-
 #### 3.1 Robust Voting + Ground Plane Refinement
 
 An enhanced version of Method 3 with additional safeguards:
@@ -75,8 +68,6 @@ An enhanced version of Method 3 with additional safeguards:
 
 This improves reconstruction reliability for difficult ALS scenarios.
 
----
-
 #### 4. Minimum-Area Rectangle Footprint Cuboid
 
 A geometry-driven method that:
@@ -87,8 +78,6 @@ A geometry-driven method that:
 - extrudes cuboid meshes
 
 Simple and fast, suitable as a fallback or baseline method.
-
----
 
 #### 5. Ridge-Based Orientation Cuboid (Contour + Multi-Line RANSAC)
 
