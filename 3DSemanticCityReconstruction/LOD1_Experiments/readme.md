@@ -1,5 +1,6 @@
 # LoD1 Building Reconstruction Techniques
 
+---
 
 ## A. Mesh Normal Alignment for Better Shading
 ReworkMesh.ipynb --> Realigns normals, for better shading
