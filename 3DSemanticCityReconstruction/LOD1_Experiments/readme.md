@@ -1,15 +1,15 @@
-Point Cloud Experiments
+# Point Cloud Experiments
 
 ## LoD1Mesh-MLS.ipynb
----------------------
+---
 MLS Experiments : Initial experiments for Cuboid mesh reconstruction (PCA Based), LOD1.2 Basic Experiments
 
 ## Mesh Normal Alignment for Better Shading
----------------------
+---
 ReworkMesh.ipynb --> Realigns normals, for better shading
 
 ## ALS LiDAR Point Cloud Experiments : LoD1Mesh-ALS.ipynb
-------------------------------------------------------
+---
 
 The focus is on robust pose estimation, ground aware alignment, and footprint orientation without relying on machine learning techniques.
 
