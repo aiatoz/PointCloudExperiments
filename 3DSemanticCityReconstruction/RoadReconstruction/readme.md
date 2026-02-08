@@ -1,4 +1,4 @@
-## Junction Detection Techniques for ALS Road Point Clouds - JunctionDetection.ipynb
+## C. Junction Detection Techniques for ALS Road Point Clouds - JunctionDetection.ipynb
 
 This script implements multiple geometric techniques for detecting road junction regions in airborne laser scanning (ALS) point clouds. Since MLS road datasets are often topologically simple and ALS datasets frequently contain complex intersections and branching structures a reliable junction detection is required to make the roads into simpler components, improving downstream reconstruction stability and mesh generation.
 
