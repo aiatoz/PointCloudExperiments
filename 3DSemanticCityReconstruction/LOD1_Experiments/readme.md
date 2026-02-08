@@ -2,8 +2,10 @@
 
 ---
 
-## A. Mesh Normal Alignment for Better Shading
-ReworkMesh.ipynb --> Realigns normals, for better shading
+## A. Mesh Normal Alignment for Better Shading : ReworkMesh.ipynb
+
+This script rebuilds triangle meshes with **flat (per-face) normals** from existing PLY meshes. It is designed as a post-processing especially for reconstructed building meshes, ensuring consistent shading and compatibility with visualization or downstream geometry pipelines.
+
 
 ---
 
