@@ -10,8 +10,62 @@ This script rebuilds triangle meshes with **flat (per-face) normals** from exist
 ---
 
 ## B. LoD1Mesh-MLS.ipynb
-MLS Experiments : Initial experiments for Cuboid mesh reconstruction (PCA Based), LOD1.2 Basic Experiments
+# MLS Cuboid & LoD Reconstruction Experiments
 
+Geometric experiments for reconstructing buildings from Mobile Laser Scanning (MLS) point clouds
+
+## Implemented Methods
+
+### 1. Simple Cuboid Construction
+
+To :
+- Understand mesh topology
+- Validate PyVista mesh construction
+- Establish visualization workflow
+
+---
+
+### 2. Axis-Aligned Bounding Cuboid (LoD1)
+
+- minimum and maximum XYZ extents
+- direct bounding box enclosure
+
+---
+
+### 3. PCA-Based Oriented Bounding Cuboid
+
+Better mechanism, with more accuracte pose estimation
+- performing PCA on the building point cloud
+- aligning the model with dominant axes
+- computing the cuboid in rotated space
+- transforming back to world coordinates
+
+---
+
+### 4. Centerline-Guided Pose Estimation
+
+Context aware reconstruction mechanism
+- finds nearest road centerline to building centroid
+- extracts local road neighborhood
+- estimates dominant orientation via PCA or tangent direction
+- aligns cuboid using urban structure context
+
+
+---
+
+### 5. Premilinary LoD1.2 Experiments - Convex, Concave Hull Footprint Extraction
+
+Convex :
+- projecting building points to XY
+- computing convex hull footprint
+- extruding vertically
+
+Concave : Enhances footprint realism using
+- k-nearest neighbor concave hull tracing
+- adaptive boundary following
+- vertical extrusion
+
+  
 ---
 
 ## C. ALS LiDAR Point Cloud Experiments : LoD1Mesh-ALS.ipynb
