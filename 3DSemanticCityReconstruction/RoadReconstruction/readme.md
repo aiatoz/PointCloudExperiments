@@ -10,9 +10,7 @@ All methods operate purely on spatial structure, no color, trajectory, or semant
 
 Detects candidate junction centers by analyzing local point density.
 
-**Idea**
-
-Junction regions contain higher neighborhood density compared to linear road segments.
+**Idea** : Junction regions contain higher neighborhood density compared to linear road segments.
 
 **Method**
 
@@ -32,9 +30,7 @@ Best suited for:
 
 A structure aware method using local covariance analysis.
 
-**Idea**
-
-Linear road segments exhibit strong directional structure, while junctions show more isotropic spread.
+**Idea** : Linear road segments exhibit strong directional structure, while junctions show more isotropic spread.
 
 **Method**
 
