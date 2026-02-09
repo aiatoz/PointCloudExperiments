@@ -14,7 +14,7 @@ All methods operate purely on spatial structure, no color, trajectory, or semant
 
 ### Implemented Methods
 
-#### 1. Density Based Junction Highlighting
+#### 1. Density Based Junction Detection
 
 Detects candidate junction centers by analyzing local point density.
 
